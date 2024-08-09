@@ -25,7 +25,8 @@ int main(){
 
     while (tPos < 70 && hPos < 70){
         auto start = chrono::steady_clock::now(); // Record the start time
-        
+        cout << start ;
+        return 0;
         // Calculate new positions
         tPos += tMove();
         hPos += hMove();
@@ -60,6 +61,7 @@ int tMove(){
     }
     return dice;
 }
+
 
 int hMove(){
     int dice = 1+ rand() % 10;
